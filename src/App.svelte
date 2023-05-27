@@ -8,7 +8,7 @@
     fact = "Loading...";
     const response = await axios.get("https://api.api-ninjas.com/v1/facts", {
       headers: {
-        'X-Api-Key': import.meta.env.VITE_API_KEY
+        'X-Api-Key': import.meta.env.API_KEY
       }
     });
     fact = response.data[0].fact;
