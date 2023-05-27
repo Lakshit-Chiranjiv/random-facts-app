@@ -5,7 +5,6 @@
   let fact = "";
 
   const getRandomFact = async () => {
-    console.log(import.meta.env.VITE_API_KEY);
     fact = "Loading...";
     const response = await axios.get("https://api.api-ninjas.com/v1/facts", {
       headers: {
