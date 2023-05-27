@@ -5,11 +5,10 @@
   let fact = "";
 
   const getRandomFact = async () => {
-    console.log(import.meta.env.API_KEY);
     fact = "Loading...";
     const response = await axios.get("https://api.api-ninjas.com/v1/facts", {
       headers: {
-        'X-Api-Key': import.meta.env.API_KEY
+        'X-Api-Key': import.meta.env.VITE_API_KEY
       }
     });
     fact = response.data[0].fact;
@@ -22,7 +21,6 @@
 
 <main>
   <h1>Random Facts Generator</h1>
-  <p>Hello</p>
   <p>{fact}</p>
   <button on:click={getRandomFact}>Generate Random Fact</button>
 </main>
