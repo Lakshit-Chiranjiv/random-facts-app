@@ -1,6 +1,6 @@
 # Random Facts App
 
-This is a website that generates random facts. Try it out [here](https://random-facts-app.vercel.app/).
+This is a website that generates random facts. Try it out [here](https://random-facts-lcs.netlify.app/).
 
 ### Technologies used
 
